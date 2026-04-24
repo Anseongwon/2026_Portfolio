@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /*배경화면 그라데이션*/
+  background-image: conic-gradient(from 90deg, #0e101f, rgb(0, 0, 0), #0e101f);
+  background-repeat: no-repeat;
+  color: azure;
+  font-family: 'Jersey 20', sans-serif;
+  /* font-family: 'Nerko One', cursive;*/
+}
+
+.header {
+  padding: 20px 70px;
+}
+
+main {
+  padding: 0 40px; /* 좌우 여백 */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerimg {
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid azure;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .name a {
+  text-decoration: none;
+  color: azure;
+  font-size: 20px;
+}
+
+.logo .name a:hover {
+  font-weight: bold;
+}
+
+.logo p {
+  margin-top: -4px 0 0;
+  color: rgb(168, 180, 180);
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(179, 191, 191);
+}
+
+.nav a:hover {
+  color: rgb(243, 209, 250);
+  font-weight: bold;
+}
+
+/*메인페이지 반으로 나누기*/
+.split {
+  display: flex;
+  min-height: 100vh;
+  gap: 40px;
+  padding-top: 80px;
+}
+
+.left,
+.right {
+  flex: 1;
+  border: 3px solid azure;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.left h1 {
+  font-size: 70px;
+}
+
+.left .keywords {
+  margin-top: 70px;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid azure;
+  padding: 5px 12px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.right {
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 70px;
+}
+
+.title h1 {
+  margin-bottom: 15px;
+}
+
+.title ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  font-size: 20px;
+}
+
+/*타임라인*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+}
+
+.year {
+  width: 80px;
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.content {
+  flex: 1;
+  font-size: 20px;
+}
+
+/*footer*/
+footer {
+  margin-top: 200px;
+  text-align: center;
+  color: rgb(168, 180, 180);
+  font-size: 14px;
+  padding: 100px;
+}
+
+/*반응형 디자인*/
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    margin-left: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .split {
+    gap: 30px;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .left {
+    font-size: 42px;
+  }
+
+  .title {
+    margin-bottom: 70px;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .year {
+    width: auto;
+  }
+}
