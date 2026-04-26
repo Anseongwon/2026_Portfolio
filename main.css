@@ -13,13 +13,11 @@ body {
 }
 
 .header {
-  top: 0;
-  left: 0;
-  padding: 0 70px;
+  padding: 20px 70px;
 }
 
 main {
-  padding: 0 20px; /* 좌우 여백 */
+  padding: 0 40px; /* 좌우 여백 */
 }
 
 .logo {
@@ -31,7 +29,7 @@ main {
 .headerimg {
   width: 40px;
   border-radius: 50%;
-  border: 5px solid azure;
+  border: 4px solid azure;
 }
 
 .header-container {
@@ -48,7 +46,6 @@ main {
   text-decoration: none;
   color: azure;
   font-size: 20px;
-  margin-bottom: 2px;
 }
 
 .logo .name a:hover {
@@ -64,8 +61,7 @@ main {
 .nav {
   display: flex;
   margin-left: auto;
-  display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 .nav a {
@@ -185,27 +181,6 @@ footer {
 }
 
 /*프로젝트*/
-/* 
-.project-box {
-  display: flex;
-  flex-direction: column;
-  margin-top: 300px;
-  text-align: center;
-  justify-content: center;
-  border: 1.5px solid azure;
-  border-radius: 20px;
-}
-
-
-.card {
-  display: flex;
-  gap: 50px;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-*/
-
 .project-link {
   display: block;
   text-decoration: none;
@@ -231,7 +206,7 @@ footer {
 
 .project-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*공간이 부족하면 다음줄로!*/
   justify-content: center;
   gap: 30px;
 }
@@ -239,7 +214,7 @@ footer {
 .card {
   width: 250px;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden; /* 이미지가 카드 밖으로 나가지 않도록 */
   transition: all 0.3s ease;
 }
 
